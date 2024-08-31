@@ -46,7 +46,7 @@
             font-size: 15px;
             outline: none;
         }
-        .input-item:placeholder {
+        .input-item::placeholder {
             text-transform: uppercase;
         }
         .btn {
@@ -56,6 +56,10 @@
             margin-top: 40px;
             background-image: linear-gradient(to right, #a6c1ee, #4f90e6);
             color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
         }
         .msg {
             text-align: center; 
@@ -72,12 +76,25 @@
         <div class="login-wrapper">
             <div class="header">登录</div>
             <div class="form-wrapper">
-                <input type="text" name="用户名" placeholder="用户名" class="input-item">
-                <input type="密码" name="密码" placeholder="密码" class="input-item">
-                <div class="btn">登录</div>
+                <input type="text" id="username" name="用户名" placeholder="用户名" class="input-item">
+                <input type="password" id="password" name="密码" placeholder="密码" class="input-item">
+                <div class="btn" onclick="checkLogin()">登录</div>
             </div>
-
+            <div class="msg" id="message"></div>
         </div>
     </div>
+    <script>
+        function checkLogin() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var messageElement = document.getElementById('message');
+
+            if (username === 'admin' && password === '123456') {
+                messageElement.innerText = '登录成功';
+            } else {
+                messageElement.innerText = '用户名或密码错误';
+            }
+        }
+    </script>
 </body>
 </html>
