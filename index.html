@@ -90,7 +90,7 @@
             var messageElement = document.getElementById('message');
 
             if (username === 'admin' && password === '123456') {
-                messageElement.innerText = '登录成功';
+                window.location.href = 'test.html'; // 重定向到test.html
             } else {
                 messageElement.innerText = '用户名或密码错误';
             }
