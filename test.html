@@ -1,40 +1,101 @@
-o<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<title>常熟实小2018届4班官网</title>
-<link rel="stylesheet" type="text/css" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常熟实小官网</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background-image: linear-gradient(to right, #fbc2eb, #3b75da);
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ffffff 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        section#showcase {
+            min-height: 400px;
+            background: url('showcase.jpg') no-repeat 0 -400px;
+            text-align: center;
+            color: #000000; /* 将文字颜色改为黑色 */
+        }
+        section#showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        section#showcase p {
+            font-size: 20px;
+        }
+        footer {
+            padding: 20px;
+            margin-top: 350px;
+            color: #ffffff;
+            background-image: linear-gradient(to right, #fbc2eb, #3b75da);
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="a">
-        <div class="b">
-            <a href="#">常熟实小2018届4班官网</a>
-            
-            <span></br><br/></span>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">常熟实小2018届4班</span> 官网</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">首页</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="c">
-            <!-- --i是用来计算平面圆柱的动效延迟和距离的
-            --w则是用来计算平面圆柱的宽度 -->
-            <div class="d" style="--i:1;--w:1.5"></div>
-            <div class="d" style="--i:2;--w:1.6"></div>
-            <div class="d" style="--i:3;--w:1.4"></div>
-            <div class="d" style="--i:4;--w:1.7"></div>
-            <div class="e" style="--i:1"></div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>欢迎来到常熟实小2018届4班官网</h1>
+            <p>这里是常熟实验小学2018届4班的官方网站,提供学校信息、新闻动态等内容。</p>
         </div>
-        <!-- 设置二维码 -->
-        <div class="f">
-            <a href="http://syxx.jscsedu.cn/xwgk">学校官网</a>
-        </div>
-    </div>
-    <div class="menu">
-        <div class="h"></div>
-        <div class="img">
-            <a href="http://syxx.jscsedu.cn/xwgk" >
-                <img src="/bsicon.webp" class="bsicon">
-            </a>
-            
-        </div>
-    </div>
-    
+    </section>
+
+    <footer>
+        <p>常熟实验小学2018届4班版权所有 &copy; 2023</p>
+    </footer>
 </body>
 </html>
